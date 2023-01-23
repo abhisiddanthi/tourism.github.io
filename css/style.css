@@ -1,0 +1,124 @@
+body {
+  margin:0;
+}
+    
+.navbar {
+  background-color: rgb(98, 207, 212);
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index:1;
+}
+
+.navbar a {
+  float: right;
+  display: block; 
+  color: white;
+  text-align: center;
+  padding: 30px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a:hover {
+  color: rgb(185, 178, 178);
+} 
+
+.img {
+  vertical-align: center;
+  height: 90px;
+  padding: 5px;
+  padding-left: 10px;
+} 
+
+.img-box{
+  height: 160px;
+}
+
+.right{
+  float: right;
+  float: bottom;
+  vertical-align: center;
+}
+
+.container-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.flexbox {    
+  width: 650px; 
+  height: 500px;
+}
+
+.flexbox-1 {  
+  background-image: url("..//Images/switzerland.jpg");
+  background-size: cover;
+}
+
+.flexbox-2 {
+  background-image: url("..//Images/desert.jpg");
+  background-size: cover;
+}
+
+.flexbox-3 {
+  background-image: url("..//Images/forest.jpg");
+  background-size: cover;
+}
+
+.flexbox-4 {
+  background-image: url("..//Images/switzerland.jpg");
+  background-size: cover;
+}
+
+.title {
+  text-align: center;
+}
+
+.footer {
+  height: 300px;
+  margin: 0px;
+  background-color: rgb(33, 33, 43);
+  color: white;
+}
+
+.myImage{
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: 3000;
+  width:200px;
+  height:25px;
+  background:#C96666;  
+  display:inline-block;
+  right:-1500px;
+  transition: 1s;
+} 
+
+.myImage:hover{
+    transition: 1s;
+    right:-1450px;
+}
+   
+#flexnav {
+  display: flex;
+}
+
+@media screen and (min-width: 0px) and (max-width: 400px) {
+  #flexnav { display: block; }
+}
+
+@media screen and (min-width: 401px) and (max-width: 1024px) {
+  #flexnav { display: none; }
+}
+
