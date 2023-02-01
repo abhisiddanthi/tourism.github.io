@@ -7,19 +7,31 @@
 <link rel="stylesheet" href="css/style.css">    
 </head>
     <body>
-        <div>
-            <div class="navbar">
-                <img class="img" align:left src="Images/logo.png" alt="image not found">
-                <div id="flexnav">
-                  <div class="right">
-                    <a href="#contact">Contact us</a>
-                    <a href="#about">About Us</a>
-                    <a href="#tours">Tours</a>
-                    <a href="#home">Home</a>
-                  </div> 
+          <nav class="navbar">
+              <img class="img" align:left src="Images/logo.png" alt="image not found">
+                <ul class="nav-menu">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                  </li>
+                   <li class="nav-item">
+                     <a href="#" class="nav-link">Tours</a>
+                   </li>
+                  <li class="nav-item">
+                     <a href="#" class="nav-link">About Us</a>
+                  </li>
+                 <li class="nav-item">
+                      <a href="#" class="nav-link">Contact Us</a>
+                    </li>
+                </ul>
+
+                <div class="hamburger">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
                 </div>
-            </div>    
-        </div>
+              </nav>    
+
+        
 
         <div class="container-top">
             <div class="flexbox flexbox-1">
@@ -133,5 +145,19 @@
 
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <script>
+          const hamburger = document.querySelector(".hamburger");
+          const navMenu = document.querySelector(".nav-menu");
+        
+          hamburger.addEventListener("click", ()=> {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+          })
+        
+          document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", ()=> {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+          }))
+        </script>
     </body>
 </html>
