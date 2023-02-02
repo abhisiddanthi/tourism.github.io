@@ -13,14 +13,14 @@ li{
 }
     
 .navbar {
-  background-color: rgb(98, 207, 212);
+  background-color: rgb(152, 151, 240);
   overflow: hidden;
   position: fixed;
   padding: 0 24px;
   top: 0;
   align-items: center;
   width: 100%;
-  min-height: 100px;
+  min-height: 90px;
   z-index:1;
 }
 
@@ -55,47 +55,45 @@ li{
   height: 160px;
 }
 
-.right{
-  float: right;
-  float: bottom;
-  vertical-align: center;
+.container-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.container-top {
+.container-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap:wrap;
+}
+
+.container-card {
   display: flex;
   flex-direction: row;
   justify-content: center;
   padding-top: 100px;
 }
 
-.container {
+.container1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding: 0;
+  gap: 50px;
 }
 
 .flexbox {    
-  width: 650px; 
+  width: 50%; 
   height: 500px;
-}
+} 
 
 .flexbox-1 {  
-  background-image: url("..//Images/switzerland.jpg");
-  background-size: cover;
+  background-image: linear-gradient(0deg, white, rgb(152, 151, 240));
 }
 
 .flexbox-2 {
-  background-image: url("..//Images/desert.jpg");
-  background-size: cover;
-}
-
-.flexbox-3 {
-  background-image: url("..//Images/forest.jpg");
-  background-size: cover;
-}
-
-.flexbox-4 {
-  background-image: url("..//Images/switzerland.jpg");
+  background-image: url("..//Images/lavender.jpg");
   background-size: cover;
 }
 
@@ -104,10 +102,22 @@ li{
 }
 
 .footer {
-  height: 300px;
-  margin: 0px;
-  background-color: rgb(33, 33, 43);
-  color: white;
+  background-color: rgb(152, 151, 240);
+  overflow: hidden;
+  padding: 0 24px;
+  bottom: 0;
+  align-items: center;
+  width: 100%;
+  min-height: 100px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  flex-direction: row;
 }
 
 .myImage{
@@ -135,15 +145,15 @@ li{
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: rgb(255, 255, 255);;
+  background-color: rgb(255, 255, 255);
 }
 
-@media screen and (min-width: 0px) and (max-width: 400px) {
+@media screen and (min-width: 0px) and (max-width: 300px) {
   .nav-menu { display: block; }
 
 }
 
-@media screen and (min-width: 401px) and (max-width: 1024px) {
+@media screen and (min-width: 301px) and (max-width: 1024px) {
   .hamburger {display: block;}
 
   .hamburger.active .bar:nth-child(2){
@@ -164,7 +174,7 @@ li{
     top: 70px;
     gap: 0;
     flex-direction: column;
-    background-color: rgb(98, 207, 212);
+    background-color: rgb(152, 151, 240);
     width: 100%;
     text-align: center;
     transition: 0.2s;
@@ -179,5 +189,61 @@ li{
   }
 }
 
+.contact {
+  margin-left: 13%;
+  width: 75%;
+  text-align: center;
+  border: solid 1px black;
+  background-image: url("..//Images/sandwater.jpg");
+}
 
+.button {
+  width:80%; padding:10px 30px; margin-left:-5px; margin-top:7px; color:#000; background:rgb(152, 151, 240);
+  border-radius:2px; font-size:15px; border:none; font-weight:600; cursor:pointer; text-transform:uppercase; 
+}
 
+.button:hover {
+  background: rgb(130, 128, 236);
+}
+
+.formelement {
+  width:200px; float:left; margin:7px 14px; background:#FFF; color:#000; padding:8px 5px;
+}
+
+.hr {
+  display: block;
+  width: 18%;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(152, 151, 240);
+}
+
+.about {
+  align-items: center;
+}
+
+.why {
+  background-color: rgb(152, 151, 240);
+  align-items: center;  
+  border-radius: 4%;
+  color: white;
+  padding: 3%;
+}
+
+.link{
+  transition: 0.7s ease;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: solid;
+  padding-top: 10px;
+  color: black;
+  float: left;
+}
+
+.link:hover {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+}
